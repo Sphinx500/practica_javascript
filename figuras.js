@@ -1,4 +1,4 @@
-//CODIGO DE RECTANGULO
+//CODIGO DE CUADRADO
 console.group("Cuadrados");
 const ladoCuadrado = 5;
 console.log("Los lados del cuadrado miden:" + ladoCuadrado + "cm");
