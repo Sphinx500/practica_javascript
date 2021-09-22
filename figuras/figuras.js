@@ -61,43 +61,31 @@ function areaCirculo(radio){
 
 console.groupEnd();
 
-// console.group("Triangulo Iscoceles");
 
-// function alturaTrianguloIsosceles(trianguloGrandeLadoA, trianguloGrandeLadoB, trianguloGrandeLadoBase) {
-//     if (trianguloGrandeLadoA != trianguloGrandeLadoB) {
-//         console.error("Los lados a y b no son iguales");
-//     } else {
-//         const trianguloPequenoLadoB = trianguloGrandeLadoBase / 2;
-//         const trianguloPequenoLadoBase = trianguloGrandeLadoA;
 
-//         const trianguloPequenoLadoBCuadrado = trianguloPequenoLadoB * trianguloPequenoLadoB;
-//         const trianguloPequenoLadoBaseCuadrado = trianguloPequenoLadoBase * trianguloPequenoLadoBase;
 
-//         const trianguloPequenoLadoA = Math.sqrt(trianguloPequenoLadoBaseCuadrado - trianguloPequenoLadoBCuadrado);
-
-//         const trianguloGrandeAltura = trianguloPequenoLadoA;
-//         return trianguloGrandeAltura;
-//     }
-// }
-
-// console.groupEnd();
 
 
 //Funciones de HTML
 
+//FUNCIONES DE CUADRADO
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
     const perimetrocuad = perimetroCuadrado(value);
-    alert(perimetrocuad);
+    ResultP =document.getElementById("ResultadoPCuadrado");
+    ResultP.innerText="El Perimetro del Cuadrado es: " +perimetrocuad;
 }
 function calcularAreaCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
     const areacuad = areaCuadrado(value);
-    alert(areacuad);
+    ResultA = document.getElementById("ResultadoACuadrado");
+    ResultA.innerText="El Area del Cuadrado es: " + areacuad;
 }
 
+
+//FUNCIONES DE TRIANGULO
 function calcularPerimetroTriangulo(){
     const lado1 = document.getElementById("Lado1Triangulo");
     const lado2 = document.getElementById("Lado2Triangulo");
@@ -106,11 +94,34 @@ function calcularPerimetroTriangulo(){
     const tlado2 = parseInt(lado2.value);
     const tbase = parseInt(base.value);
     const perimetro = perimetroTriangulo(tlado1, tlado2,tbase);
-    document.getElementById(perimetro);
+    ResultP = document.getElementById("ResultadoPTriangulo");
+    ResultP.innerText="El perimetro del triangulo es: " + perimetro;
 }
-function calcularAreaCuadrado(){
-    const input = document.getElementById("InputCuadrado");
-    const value = input.value;
-    const area = areaCuadrado(value);
-    alert(area);
+
+function calcularAreaTriangulo(){
+    const base = document.getElementById("BaseATriangulo");
+    const altura = document.getElementById("AlturaTriangulo");
+    const tbase = parseInt(base.value);
+    const taltura = parseInt(altura.value);
+    const area = areaTriangulo(tbase, taltura);
+    ResultA = document.getElementById("ResultadoATriangulo");
+    ResultA.innerText="El area del trangulo es: " + area;
+}
+
+//FUNCIONES DE CIRCULO
+
+function calcularPerimetroCirculo(){
+    const radio = document.getElementById("InputCirculo");
+    const cradio =parseInt(radio.value);
+    perimetro = perimetroCirculo(cradio);
+    ResultP =document.getElementById("ResultadoPCirculo");
+    ResultP.innerText="El Perimetro del Cuadrado es: " + perimetro;
+}
+
+function calcularAreaCirculo(){
+    const radio = document.getElementById("InputCirculo");
+    const cradio =parseInt(radio.value);
+    area = areaCirculo(cradio);
+    ResultP =document.getElementById("ResultadoACirculo");
+    ResultP.innerText="El Area del Cuadrado es: " + area;
 }
