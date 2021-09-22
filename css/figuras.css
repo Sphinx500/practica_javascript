@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    padding:20px;
+    /* border: 1px solid black; */
+    background-color: #145DA0;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+body{
+    background-color:#0C2D48;
+}
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top:30px;
+}
+.section_Cuadrado{
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    width: 80%;
+    background-color: #B1D4E0;
+}
+.section_Cuadrado h2{
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #145DA0;
+}
+
+.section_Cuadrado label{
+    text-align: center;
+    margin: 10px;
+}
+.section_Cuadrado input{
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    height:25px;
+}
+
+.section_Cuadrado button{
+    height:30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #145DA0;
+    color: white;
+    width: 100%;
+    margin-left:auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.section_Triangulo{
+    margin: 0 auto;
+    width: 80%;
+    height:500px;
+    /* border: 1px solid black; */
+    background-color: #B1D4E0;
+}
+.section_Triangulo h2{
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #145DA0;
+}
+.section_Triangulo h3{
+    text-align: center;
+}
+.section_Triangulo label{
+    text-align: center;
+    margin: 10px;
+}
+.section_Triangulo input{
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    height:25px;
+}
+
+.section_Circulo{
+    margin: 0 auto;
+    width: 80%;
+    /* border: 1px solid black; */
+    background-color: #B1D4E0;
+}
+
+.section_Circulo h2{
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #145DA0;
+}
+
+.section_Circulo label{
+    text-align: center;
+    margin: 10px;
+}
+.section_Circulo input{
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    height:25px;
+}
